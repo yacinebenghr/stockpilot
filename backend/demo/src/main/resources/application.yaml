@@ -1,3 +1,15 @@
 spring:
   application:
     name: demo
+  jpa:
+    hibernate:
+        ddl-auto: validate
+    datasource:
+      url: jdbc:postgresql://localhost:5432/stock_db
+      username: postgres
+      password: postgres
+flyway:
+  enabled: true
+server:
+  port: 8090
+
